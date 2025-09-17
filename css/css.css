@@ -32,16 +32,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Zen+Tokyo+Zoo&display=swap');
 
 
-/* Sådan bruger du fontene, her "Permanent marker
-.monoton-regular 
+/* Sådan bruger du fontene, her "Permanent marker*/
+.monoton-regular{
   font-family: "Monoton", sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: normal;}
 */
+
+/*typografi*/
+
+/*zen Tokyo zoo - Logo font*/
+.zen-tokyo-zoo-regular {
+  font-family: "Zen Tokyo Zoo", system-ui;
+  font-weight: 400;
+  font-style: normal;}
+  
+/*jost - brødtekst font*/
+.jost {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* eller fjern denne linje hvis ikke nødvendig */
+  font-style: normal;
+}
 
 :root{
 /* typografi */
-  --overskrifter:"monoton, sans-serif"; 
+  --overskrifter:"Zen Tokyo Zoo", sans-serif; 
+  --overrubrikker:"Jost", sans-serif;
 }
   
 
@@ -76,9 +93,9 @@
 /* H1 med ny font */
 h1 {
   font-family: var(--overskrifter); 
-  font-size: 2.5rem; 
+  font-size: 3.5rem; 
   color: #1100FF;
-  letter-spacing: 5px;
+  letter-spacing: 6px; /* afstand mellem bogstaverne */
 } 
 
 /*Venstre navigation*/
@@ -140,7 +157,6 @@ button {
   top: -20%;
   left: 0%;
 }
-
 button:hover {
   background-color: #DDB9CB;
   color: #650A08;
@@ -174,17 +190,19 @@ header {
 }
 
 /* Højtaler billede*/
-.højtaler-billede{  display: flex;
+.højtaler-billede {
+  display: flex;
   justify-content: flex-end;
-  img {
+}
+.højtaler-billede img {
   width: 500px;
   height: auto;
   margin-top: -600px;
   margin-right: 60px;
-  position:  absolute;
+  position: absolute;
   top: 98%;
   right: 0%;
-}}
+}
 
 /* flexboks ikoner */
 .ikon-flex {
@@ -213,3 +231,63 @@ header {
 
   
 }
+
+/* Underoverskrifter og brødtekst til ikoner */
+
+.h3-flex {
+  display: flex;
+  justify-content: center;
+  gap: 160px; /* afstand mellem h3'erne */
+  margin-top: -40px;
+  text-align: center
+}
+
+.h3-flex h3 {
+  font-family: plus-jakarta-sans, sans-serif;
+  color: #000000;
+  font-size: 2rem; 
+}
+
+.h4-flex {
+  display: flex;
+  justify-content: center center;
+  gap: 130px; /* afstand mellem h4'erne */
+  margin-top: 50px;
+  margin-left: 170px;
+  margin-right: 150px;
+  text-align: center;
+}
+
+.h4-flex .h4-flex {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #000000;
+  font-size: 3rem; 
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  background-image: url('../images/hej.png');
+  background-size: cover;
+  background-position: 70%;
+  background-repeat: no-repeat;
+  background-size: 118%;
+  rotate: 50%;
+  margin-bottom: 330vh;
+}
+
+
+
+
+/* Footer styling */
+footer {
+  background-color: #F2C7CE;
+  color: #650A08;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
