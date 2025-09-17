@@ -136,6 +136,9 @@ button {
   box-shadow: 0 4px 12px 0 rgba(49, 49, 49, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   margin-top: 825px;
   margin-left: 640px; 
+  position:  absolute;
+  top: -20%;
+  left: 0%;
 }
 
 button:hover {
@@ -174,10 +177,13 @@ header {
 .højtaler-billede{  display: flex;
   justify-content: flex-end;
   img {
-  width: 600px;
+  width: 500px;
   height: auto;
   margin-top: -600px;
   margin-right: 60px;
+  position:  absolute;
+  top: 98%;
+  right: 0%;
 }}
 
 /* flexboks ikoner */
@@ -195,12 +201,15 @@ header {
   object-fit: contain;
 }
 
+/* ikon baggrund */
 .ikon {
-  background: #96ACCB;           /* vælg din ønskede farve */
+  background: #96ACCB;           
   padding: 40px;
   border-radius: 60px;
   box-shadow: 0 0 1px 0 rgba(133, 131, 131, 0.661);
   display: flex;
   align-items: center;
   justify-content: center;
+
+  
 }
