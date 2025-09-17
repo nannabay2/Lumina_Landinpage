@@ -1,0 +1,206 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Remove whitespace on top of certain browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define variables in the :root */
+ 
+
+/* Use your variables on elements along these lines */
+/*
+:root {
+  --contrast: lime;
+  --backgr: #000;
+}
+
+--- You can use the variables like this ---
+
+ main {
+   color: var(--contrast);
+   background-color: var(--backgr);
+ }
+*/
+
+/* Her importeres Fonten */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Zen+Tokyo+Zoo&display=swap');
+
+
+/* Sådan bruger du fontene, her "Permanent marker
+.monoton-regular 
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+*/
+
+:root{
+/* typografi */
+  --overskrifter:"monoton, sans-serif"; 
+}
+  
+
+/* NAVIGATION */
+
+/* Wrapper for top navigation to align left and right*/
+
+.topNavWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* baggrundsfarve i navigationen*/
+.topNavWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #F2C7CE; /* Samme farve til hele navigationen */
+}
+
+/* Fjerner stregen under linket */
+#topNavVenstre a,
+#topNavHoejre a {
+  color: rgb(3, 3, 3);
+  font-size: 20px;
+  text-decoration: none; 
+}
+
+/* H1 med ny font */
+h1 {
+  font-family: var(--overskrifter); 
+  font-size: 2.5rem; 
+  color: #1100FF;
+  letter-spacing: 5px;
+} 
+
+/*Venstre navigation*/
+#topNavVenstre{
+  background-color: #F2C7CE;
+  height: 7vh;
+  word-spacing: 30px;
+
+}
+
+#topNavVenstre a {
+  color: rgb(3, 3, 3);
+font-size: 30px;
+}
+
+#topNavVenstre ul {
+  display: flex;
+  gap: 10px; /* afstand mellem ikonerne */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*Højre*/
+#topNavHoejre{
+  background-color: #F2C7CE;
+  height: 7vh;
+  word-spacing: 30px;
+}
+
+#topNavHoejre a {
+  color: rgb(3, 3, 3);
+font-size: 30px;
+}
+
+#topNavHoejre ul {
+  display: flex;
+  gap: 10px; /* afstand mellem ikonerne */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* CALL TO ACTION KNAP */
+button {
+  background-color: #F2C7CE;
+  color: #650A08;
+  border: none;
+  padding: 35px 75px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px 0 rgba(49, 49, 49, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-top: 825px;
+  margin-left: 640px; 
+}
+
+button:hover {
+  background-color: #DDB9CB;
+  color: #650A08;
+  cursor: pointer;
+  box-shadow: 0 6px 16px 0 rgba(49,49,49,0.3);
+}
+
+
+/* Hero baggrundsbillede */
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url('../images/hej.png');
+  background-size: cover;
+  background-position: 80%;
+  background-repeat: no-repeat;
+  background-size: 118%;
+
+}
+
+/* Hero Lumina tekst */
+.hero-text {
+  position: absolute;
+  top: 10%;
+  left: 2%;
+}
+
+.hero-text img {
+  width: 850px;
+  height: auto;
+}
+
+/* Højtaler billede*/
+.højtaler-billede{  display: flex;
+  justify-content: flex-end;
+  img {
+  width: 600px;
+  height: auto;
+  margin-top: -600px;
+  margin-right: 60px;
+}}
+
+/* flexboks ikoner */
+.ikon-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px; /* afstand mellem ikonerne */
+  margin: 100px 0;
+}
+
+.ikon img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.ikon {
+  background: #96ACCB;           /* vælg din ønskede farve */
+  padding: 40px;
+  border-radius: 60px;
+  box-shadow: 0 0 1px 0 rgba(133, 131, 131, 0.661);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
